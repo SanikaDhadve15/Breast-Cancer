@@ -47,7 +47,8 @@ class CancerNet:
 def load_model():
     model = CancerNet.build(width=48, height=48, depth=3, classes=2)
     
-    model_path =  r"C:\Users\Hp\OneDrive\Desktop\Project1Inter\breastcancer.h5"
+    model_path = "breastcancer.h5"
+
     
     if os.path.exists(model_path):
         model.load_weights(model_path)
